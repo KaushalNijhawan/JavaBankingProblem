@@ -1,31 +1,41 @@
-package com.classes.Bank;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.problem.Bank;
 
-public class BankApplication {
-	private long bankBalanace = 1200000;
+/**
+ *
+ * @author rashikasingh64
+ */
+public class BankingInfo {
+    
+        long bankBalanace = 1200000;
 	String savingsName;
-	long savingsContacnumber;
+	String savingsContacnumber;
 	String savingsEmail;
-	private long savingsNumber;
-	private long savingsBalance;
-	private long currentBalance;
+	private String savingsNumber;
+	private String savingsBalance;
+	private String currentBalance;
 	String currentCompName;
 	String currentRepresentativeName;
-	long currentContactNumber;
+	String currentContactNumber;
 	String currentEmail;
 	String currentBussinessType;
-    private long currentNumber;
+    private String currentNumber;
     
-    public BankApplication() {
+    public BankingInfo() {
     	
     }
     
-    public BankApplication(String savingsname , long savingsContactNumber , String savingsEmail , long savingsNumber) {
+    public BankingInfo(String savingsname , String savingsContactNumber , String savingsEmail , String savingsNumber) {
     	this.savingsName = savingsname;
     	this.savingsContacnumber = savingsContactNumber;
     	this.savingsEmail = savingsEmail;
     	this.savingsBalance = savingsNumber;
     }
-    public BankApplication(String currentCompName , String RepresentativeName , long currentContactnumber  , String currentEmail , String currentBusinessType , long currentNumber ) {
+    public BankingInfo(String currentCompName , String RepresentativeName , String currentContactnumber  , String currentEmail , String currentBusinessType , String currentNumber ) {
           this.currentCompName = currentCompName;
           this.currentRepresentativeName = RepresentativeName;
           this.currentContactNumber = currentContactnumber;
@@ -51,11 +61,11 @@ public class BankApplication {
 		this.savingsName = savingsName;
 	}
 
-	public long getSavingsContacnumber() {
+	public String getSavingsContacnumber() {
 		return savingsContacnumber;
 	}
 
-	public void setSavingsContacnumber(long savingsContacnumber) {
+	public void setSavingsContacnumber(String savingsContacnumber) {
 		this.savingsContacnumber = savingsContacnumber;
 	}
 
@@ -83,11 +93,11 @@ public class BankApplication {
 		this.currentRepresentativeName = currentRepresentativeName;
 	}
 
-	public long getCurrentContactNumber() {
+	public String getCurrentContactNumber() {
 		return currentContactNumber;
 	}
 
-	public void setCurrentContactNumber(long currentContactNumber) {
+	public void setCurrentContactNumber(String currentContactNumber) {
 		this.currentContactNumber = currentContactNumber;
 	}
 
@@ -107,35 +117,35 @@ public class BankApplication {
 		this.currentBussinessType = currentBussinessType;
 	}
 
-	public long getSavingsNumber() {
+	public String getSavingsNumber() {
 		return savingsNumber;
 	}
 
-	public void setSavingsNumber(long savingsNumber) {
+	public void setSavingsNumber(String savingsNumber) {
 		this.savingsNumber = savingsNumber;
 	}
 
-	public long getCurrentNumber() {
+	public String getCurrentNumber() {
 		return currentNumber;
 	}
 
-	public void setCurrentNumber(long currentNumber) {
+	public void setCurrentNumber(String currentNumber) {
 		this.currentNumber = currentNumber;
 	}
 
-	public long getSavingsBalance() {
+	public String getSavingsBalance() {
 		return savingsBalance;
 	}
 
-	public void setSavingsBalance(long savingsBalance) {
+	public void setSavingsBalance(String savingsBalance) {
 		this.savingsBalance = savingsBalance;
 	}
 
-	public long getCurrentBalance() {
+	public String getCurrentBalance() {
 		return currentBalance;
 	}
 
-	public void setCurrentBalance(long currentBalance) {
+	public void setCurrentBalance(String currentBalance) {
 		this.currentBalance = currentBalance;
 	}
 
